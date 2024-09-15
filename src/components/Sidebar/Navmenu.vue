@@ -182,7 +182,7 @@ export default {
 			return this.activeSubmenu === i ? 'open' : '';
 		},
 		isMenuActive(item) {
-			return this.$route.name === item?.link ? 'menu-item-active' : '';
+			return this.$route.path === item?.link ? 'menu-item-active' : '';
 		},
     },
 
@@ -236,7 +236,7 @@ export default {
         @apply text-slate-800 dark:text-slate-300 text-xs font-semibold uppercase mb-4 mt-4;
     }
     > .menu-link {
-        @apply flex text-slate-600 font-medium dark:text-slate-300 text-sm capitalize px-[10px] py-3 rounded-[4px] cursor-pointer;
+        @apply flex text-slate-600 font-medium dark:text-slate-300 capitalize px-[10px] py-3 rounded-[4px] text-xs cursor-pointer;
     }
     .menu-icon {
         @apply icon-box inline-flex items-center text-slate-600 dark:text-slate-300 text-lg ltr:mr-3 rtl:ml-3;
@@ -301,11 +301,11 @@ export default {
 }
 .menu-item-active {
     .menu-link {
-        @apply bg-slate-800 dark:bg-slate-700;
+        @apply bg-slate-100 dark:bg-slate-700 rounded-md;
         .icon-box,
         .menu-icon,
         .text-box {
-            @apply text-white dark:text-slate-300;
+            @apply text-green-500 dark:text-slate-300;
         }
     }
 }

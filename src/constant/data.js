@@ -6,12 +6,17 @@ import user4Img from "@/assets/images/all-img/user4.png";
 export const menuItems = [
   {
     isHeadr: true,
-    title: "Admin Dashboard",
+    title: "Main Menu",
   },
   {
-    title: "Dashboard",
-    // icon: "heroicons-outline:home",
-    link: "home",
+    title: "Overview",
+    icon: "heroicons-outline:home",
+    link: "/",
+  },
+  {
+    title: "Crm",
+    icon: "ant-design:schedule-twotone",
+    link: "/crm",
   },
 ];
 // menuseetins

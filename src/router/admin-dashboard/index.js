@@ -1,7 +1,7 @@
 const router = [
     {
         name: "home",
-        path: "home",
+        path: "/",
         component: () => import("@/views/home/index.vue"),
         meta: {
             groupParents: 'Home Dashboard'
@@ -9,7 +9,7 @@ const router = [
     },
     {
         name: 'CRM Dashboard',
-        path: 'crm',
+        path: '/crm',
         component: () => import('@/views/home/crm.vue'),
     },
     {
