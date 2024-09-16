@@ -4,7 +4,7 @@
 			<icon icon="tabler:dots" />
 		</template>
 
-		<div v-for="i in 4" :key="i" class="grid grid-cols-4 border-y p-4">
+		<div v-for="i in 4" :key="i" class="grid grid-cols-4 border-y p-4" :class="{'border-t-0': i !== 1}">
 			<div class="flex px-2 border-r">
 				<div class="flex items-center">
 					<img :src="profileImg" alt="" width="40" />
