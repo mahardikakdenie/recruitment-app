@@ -10,13 +10,18 @@ export const menuItems = [
   },
   {
     title: "Overview",
-    icon: "heroicons-outline:home",
+    icon: "material-symbols-light:overview-rounded",
     link: "/",
   },
   {
     title: "Crm",
     icon: "ant-design:schedule-twotone",
     link: "/crm",
+  },
+  {
+    title: "Analytics",
+    icon: "heroicons-outline:home",
+    link: "/home",
   },
 ];
 // menuseetins

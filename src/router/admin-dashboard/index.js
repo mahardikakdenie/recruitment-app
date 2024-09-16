@@ -1,7 +1,7 @@
 const router = [
     {
         name: "home",
-        path: "/",
+        path: "/home",
         component: () => import("@/views/home/index.vue"),
         meta: {
             groupParents: 'Home Dashboard'

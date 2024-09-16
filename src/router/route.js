@@ -8,6 +8,11 @@ const routes = [
     children: [
       ...adminDashboard,
       {
+        path: '/',
+        name: 'Overviews',
+        component: () => import('@/views/pages/overviews.vue'),
+      },
+      {
         path: "/calender",
         name: "calender",
         component: () => import("@/views/index.vue"),

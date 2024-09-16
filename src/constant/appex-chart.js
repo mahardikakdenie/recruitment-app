@@ -2275,7 +2275,7 @@ export const radarChartDark = {
 };
 
 export const MultipleRadialbars = {
-  series: [44, 55, 67, 83],
+  series: [44, 55, 67, 183],
   chartOptions: {
     chart: {
       toolbar: {
@@ -2304,10 +2304,33 @@ export const MultipleRadialbars = {
         },
       },
     },
-    labels: ["A", "B", "C", "D"],
+    labels: ["LinkedIn", "Company Website", "Referal", "Jobstreet"],
     colors: ["#4669FA", "#FA916B", "#50C793", "#0CE7FA"],
+
+    // Menambahkan opsi legenda
+    legend: {
+      show: true,
+      position: 'bottom', // Bisa juga 'top', 'left', atau 'right'
+      fontSize: '14px',
+      fontFamily: 'Arial, sans-serif',
+      labels: {
+        colors: '#475569', // Warna teks legenda
+      },
+      markers: {
+        width: 12,
+        height: 12,
+        strokeWidth: 0,
+        strokeColor: '#fff',
+      },
+      itemMargin: {
+        horizontal: 10,
+        vertical: 5,
+      },
+    },
   },
 };
+
+
 export const MultipleRadialbarsDark = {
   series: [44, 55, 67, 83],
   chartOptions: {
